@@ -7,13 +7,9 @@ module.exports = {
     // },
     // 反向代理
     proxy: {
-      '/api': {
-        target: 'http://m.maoyan.com',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/kerwin': ''
-        }
-        /* /kerwin/ajax/comingList  ====> /ajax/comingList  */
+      '/Service': {
+        target: 'https://m.mtime.cn',
+        changeOrigin: true
       }
     }
 

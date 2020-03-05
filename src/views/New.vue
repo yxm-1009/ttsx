@@ -1,6 +1,7 @@
 <template>
     <div class="main">
-        该页面不存在，404
+        new
+        发现
     </div>
 </template>
 <script>

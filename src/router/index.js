@@ -19,20 +19,28 @@ Vue.use(VueRouter) // 注册路由插件
 // 路由映射表
 // 分为嵌套路由和轮播路由
 const routes = [
-  // 视图组件
+  // 首页
   {
     path: '/index',
     component: Index
   },
+  // 购票
   {
-    path: '/category',
+    path: '/cinema',
     // 路由懒加载，提高用户体验。SEO优化   解决 首屏加载过慢的问题
-    component: () => import('@/views/Category')
+    component: () => import('@/views/Cinema')
   },
+  // 商城
   {
-    path: '/cart',
-    component: () => import('@/views/Cart')
+    path: '/goods',
+    component: () => import('@/views/Goods')
   },
+  // 发现
+  {
+    path: '/new',
+    component: () => import('@/views/New')
+  },
+  // 个人中心
   {
     path: '/user',
     component: () => import('@/views/User')
